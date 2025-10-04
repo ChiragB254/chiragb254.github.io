@@ -1,0 +1,46 @@
+# Site settings
+title: "Chirag Bansal"
+description: "Data Scientist specializing in machine learning and analytics solutions"
+url: "https://chiragb254.github.io"
+baseurl: ""         # keep empty for USERNAME.github.io
+timezone: Asia/Kolkata
+future: true
+
+# Author information
+author:
+  name: "Chirag Bansal"
+  email: chirag.bansal@email.com
+  linkedin: https://www.linkedin.com/in/chiragb254/
+  github: https://github.com/chiragb254
+  kaggle: https://www.kaggle.com/chiragb254
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Plugins (GitHub Pages–supported only)
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Defaults (make posts use the /posts/slug/ pattern)
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      permalink: "/posts/:slug/"
+      author: "Chirag Bansal"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - .git
